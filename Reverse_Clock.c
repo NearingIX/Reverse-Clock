@@ -17,10 +17,6 @@ int main(void){
     int currentHour = tm_struct->tm_hour;
     int currentMinute = tm_struct->tm_min;
     int currentSecond = tm_struct->tm_sec;
-
-    //clock will tick back for one second relative to when started
-    //currently set to only run for 10 seconds and will then exit
-    char line;
     int z = 0;
  
     for (int i = currentSecond; i < 60; i--) {
